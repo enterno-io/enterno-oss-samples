@@ -61,6 +61,16 @@ at [enterno.io](https://enterno.io) (SSL checker, Security Scanner,
 Heartbeat monitor, DNS Lookup) run the same checks on a schedule with
 alerts to Telegram / Slack / Email. 20 monitors free forever.
 
+Free one-off checks that pair well with these scripts:
+
+| After running… | Verify with |
+|---|---|
+| `install-ssl-nginx.sh` / `letsencrypt-wildcard.sh` | [SSL certificate checker](https://enterno.io/en/ssl) — chain, expiry, protocols |
+| `ssh-hardening.sh` / `setup-fail2ban.sh` | [Port scanner](https://enterno.io/en/port-scanner) — confirm only 22/80/443 are open |
+| any nginx change | [Security headers scanner](https://enterno.io/en/security) — HSTS, CSP, cookies graded A–F |
+| DNS / domain moves | [DNS lookup](https://enterno.io/en/dns) + [subdomain finder](https://enterno.io/en/subdomain-enum) (CT-log search, a fast [crt.sh alternative](https://enterno.io/en/s/alternatives-crt-sh)) |
+| mail server setup | [Email deliverability check](https://enterno.io/en/email-check) — SPF, DKIM, DMARC, blacklists |
+
 ## Contributing
 
 Pull requests welcome — please include:
